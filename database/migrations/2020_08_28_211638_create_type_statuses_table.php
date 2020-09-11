@@ -14,7 +14,7 @@ class CreateTypeStatusesTable extends Migration
     public function up()
     {
         Schema::create('type_statuses', function (Blueprint $table) {
-            $table->bigIncrements('id');// Como dice big en bigIntener Donde se quira relacionar
+            $table->bigIncrements('id');
             $table->string('name');
             $table->timestamps();
         });

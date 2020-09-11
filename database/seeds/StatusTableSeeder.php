@@ -19,8 +19,10 @@ class StatusTableSeeder extends Seeder
 
         foreach ($status as $value) {
             $statuses = new Statuses;
-            $statuses->statuses = $value['statuses'];
+            $statuses->name = $value['statuses'];
+            $statuses->type_status_id = 1;
             $statuses->save();
+            
         }
     }
 }

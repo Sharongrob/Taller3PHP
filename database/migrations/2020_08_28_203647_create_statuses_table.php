@@ -16,7 +16,8 @@ class CreateStatusesTable extends Migration
         Schema::create('statuses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->bigInteger('type_status_id')->unsigned();
+            // $table->string('statuses');
+            $table->bigInteger('type_status_id')->unsigned();// Es ina llave foranea no puede ir null
             $table->timestamps();
         });
     }
